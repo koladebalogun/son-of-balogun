@@ -271,16 +271,45 @@ img {
   }
 
   .images.stacked-container {
-    position: fixed;
     bottom: -2em;
     left: 5.5em;
-    width: auto;
-    height: auto;
     display: flex;
-    /* flex-direction: row; */
-    align-items: flex-start;
-    gap: 1em;
-    transform: none;
-    will-change: transform;
   }
 }
+
+
+@media (max-width: 768px) {
+    /* .revealers {
+      display: none;
+    } */
+  
+    .site-info {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  
+    .site-info h2 {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  
+    .site-info h2 .line span {
+      display: block;
+      width: 100%;
+    }
+  
+    .cover-img {
+      top: -2em;
+      right: 0;
+      width: 100%;
+      height: 58%;
+    }
+  
+    .images.stacked-container {
+      bottom: -2em;
+      left: 5.5em;
+      display: flex;
+    }
+  }
+  
