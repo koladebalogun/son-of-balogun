@@ -1,9 +1,16 @@
 @font-face {
-    font-family: 'PP Neue Montreal';
-    src: url('../public/fonts/ppneuemontreal-medium.otf');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "PP Neue Montreal";
+  src: url("../public/fonts/ppneuemontreal-medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Apercu Mono pro";
+  src: url("../public/fonts/ApercuMonoProMedium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -138,7 +145,7 @@ img {
   bottom: 2em;
   width: 40%;
   height: 50%;
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100% );
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 
 .cover-img img {
@@ -232,4 +239,48 @@ img {
 .nav {
   position: absolute;
   right: 0;
+}
+
+@media (max-width: 480px) {
+  /* .revealers {
+    display: none;
+  } */
+
+  .site-info {
+    /* display: none; */
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  .site-info h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .site-info h2 .line span {
+    display: block;
+    width: 100%;
+  }
+
+  .cover-img {
+    top: -2em;
+    right: 0;
+    width: 100%;
+    height: 58%;
+  }
+
+  .images.stacked-container {
+    position: fixed;
+    bottom: -2em;
+    left: 5.5em;
+    width: auto;
+    height: auto;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: flex-start;
+    gap: 1em;
+    transform: none;
+    will-change: transform;
+  }
 }
